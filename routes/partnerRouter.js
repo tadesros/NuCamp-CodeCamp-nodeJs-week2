@@ -36,7 +36,6 @@ partnerRouter.route('/')
     })
     .catch(err => next(err));
 });
-
 partnerRouter.route('/:partnerId')
 .get((req, res, next) => {
     Partner.findById(req.params.partnerId)
